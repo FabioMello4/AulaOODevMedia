@@ -1,0 +1,42 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package aulaoo;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author fabio.algar
+ */
+public class AulaOO {
+
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        //Entrada
+        Scanner entrada = new Scanner(System.in); // Entrada Teclado
+        System.out.println("Digite o primeiro valor");
+        int contaAgua = entrada.nextInt();
+        System.out.println("Digite o segundo valor");
+        int contaLuz = entrada.nextInt();
+        int resultado = 0; //Resultado Final
+        
+        //Processamento        
+        if (contaAgua > 0 && contaLuz > 0) {
+            resultado = contaAgua + contaLuz;
+        }else{
+            System.out.println("Favor digitar novamente, valor deve ser maior que 0");
+        }      
+            
+        //Saida
+        System.out.println("Resultado = " + resultado);
+    }
+
+}
